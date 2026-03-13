@@ -27,6 +27,7 @@ pipeline {
                 npm install
                 npm run build
 
+                rm -rf ../todo_backend/static/build
                 mv build ../todo_backend/static
                 '''
             }
